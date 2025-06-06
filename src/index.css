@@ -1,0 +1,37 @@
+@import "tailwindcss";
+* {
+  font-family: "Kumbh Sans", "sans-serif";
+}
+:root {
+  /* Brand */
+  --color-brand: hsl(26, 100%, 55%);
+  --color-brand-light: hsl(25, 100%, 94%);
+
+  /* Neutrals */
+  --color-bg-dark: hsl(220, 13%, 13%);
+  --color-text-muted: hsl(219, 9%, 45%);
+  --color-text-light: hsl(220, 14%, 75%);
+  --color-bg-light: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-backdrop: hsla(0, 0%, 0%, 0.75);
+}
+#navlinks {
+  position: relative;
+  cursor: pointer;
+}
+#navlinks::before {
+  position: absolute;
+  content: "";
+  top: 3rem;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--color-brand);
+  transition: width 300ms ease;
+}
+#navlinks:hover {
+  color: var(--color-bg-dark);
+}
+#navlinks:hover::before {
+  width: 100%;
+}
