@@ -15,7 +15,7 @@ export default function Copy({ addToCart }) {
         id: 1,
         name: "Fall Limited Edition Sneakers",
         price: 125.0,
-        image: "/public/images/image-product-1.jpg",
+        image: "/images/image-product-1.jpg",
         quantity: count,
       };
       setCount(0);
@@ -54,11 +54,11 @@ export default function Copy({ addToCart }) {
         <div className="flex gap-4 sm:flex-row flex-col">
           <div className="flex sm:w-[40%] w-full justify-around items-center rounded-lg gap-5 bg-[var(--color-bg-light)] py-3">
             <div className="cursor-pointer" onClick={decrease}>
-              <img src="/public/images/icon-minus.svg" alt="" />
+              <img src="/images/icon-minus.svg" alt="" />
             </div>
             <p className="text-[var(--color-bg-dark)] font-semibold">{count}</p>
             <div className="cursor-pointer" onClick={increase}>
-              <img src="/public/images/icon-plus.svg" alt="" />
+              <img src="/images/icon-plus.svg" alt="" />
             </div>
           </div>
           <button

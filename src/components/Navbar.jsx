@@ -44,7 +44,7 @@ export default function Navbar({ items, cartCount, deleteCart }) {
             )}
           </div>
           <div className="w-12 h-12 border-2 transition border-transparent hover:border-(--color-brand) rounded-full cursor-pointer">
-            <img src="/public/images/image-avatar.png" alt="" />
+            <img src="/images/image-avatar.png" alt="" />
           </div>
         </div>
       </header>
