@@ -67,7 +67,7 @@ export default function Copy({ addToCart }) {
               count === 0
                 ? "opacity-50 bg-[var(--color-brand)] cursor-not-allowed"
                 : "bg-[var(--color-brand)]"
-            }  text-[var(--color-bg-dark)] w-full sm:w-[60%] py-2 items-center justify-center rounded-lg text-sm hover:bg-[hsl(26,100%,75%)] cursor-pointer transition`}
+            }  text-[var(--color-bg-dark)] w-full sm:w-[60%] py-3 items-center justify-center rounded-lg text-sm hover:bg-[hsl(26,100%,75%)] cursor-pointer transition`}
             onClick={handleAddToCart}
           >
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">

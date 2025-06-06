@@ -1,10 +1,4 @@
-import { useState } from "react";
-import LightboxGallery from "./LightBox"; // ✅ import this!
-
 export default function Images() {
-  const [lightBoxOpen, setLightBoxOpen] = useState(false);
-  const [selectedImageId, setSelectedImageId] = useState(null);
-
   const images = [
     {
       id: 1,
@@ -37,10 +31,6 @@ export default function Images() {
             src={images[0].image}
             className="rounded-2xl cursor-pointer"
             alt=""
-            onClick={() => {
-              setSelectedImageId(images[0].id);
-              setLightBoxOpen(true);
-            }}
           />
         </div>
 
@@ -52,30 +42,13 @@ export default function Images() {
                 src={image.thumb}
                 alt=""
                 className="rounded-lg cursor-pointer"
-                onClick={() => {
-                  setSelectedImageId(image.id);
-                  setLightBoxOpen(true);
-                }}
               />
-              <div
-                className={`absolute inset-0 rounded-lg transition-opacity duration-300 ${
-                  image.id === selectedImageId
-                    ? "opacity-40 bg-[hsl(26,100%,75%)]"
-                    : "opacity-0 hover:opacity-40 bg-(--color-brand-light)"
-                }`}
-              ></div>
             </div>
           ))}
         </div>
       </div>
 
       {/* Lightbox */}
-      <LightboxGallery
-        images={images}
-        open={lightBoxOpen}
-        onClose={() => setLightBoxOpen(false)}
-        initialImageId={selectedImageId}
-      />
     </>
   );
 }
