@@ -47,13 +47,13 @@ export default function Carousel() {
         onClick={prevSlide}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 h-8 w-8 flex justify-center bg-white rounded-full p-2 shadow-md"
       >
-        <img src="/public/images/icon-previous.svg" alt="" />
+        <img src="/images/icon-previous.svg" alt="" />
       </div>
       <div
         onClick={nextSlide}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 h-8 w-8 flex justify-center bg-white rounded-full p-2 shadow-md"
       >
-        <img src="/public/images/icon-next.svg" alt="" />
+        <img src="/images/icon-next.svg" alt="" />
       </div>
 
       {/* Dots */}
